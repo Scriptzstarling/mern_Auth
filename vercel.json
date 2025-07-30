@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://mern-auth-d9hi.onrender.com/api/$1"
+    }
+  ]
+}
